@@ -28,6 +28,7 @@ the window of tcpd client buffer and notifying the tcpd client when a timer expi
 Steps to compile and clean the code
 -----------------------------------
 To compile the code, use the following command: make
+
 To clean the code, invoke the following command: make clean
 
 Steps to run the program
@@ -35,11 +36,11 @@ Steps to run the program
 To run the tcpd,  use the following command:
 	tcpd 
 
-To run the server ftps, use the following command:
-	ftps <local-port>
+To run the server, use the following command:
+	ftp_server <local-port>
 
-To run the client ftpc, use the following command:
-	ftpc <remote-IP> <remote-port> <local-file-to-transfer>
+To run the client, use the following command:
+	ftp_client <remote-IP> <remote-port> <local-file-to-transfer>
 
 To run the timer, use the following command:
 	valgrind --leak-check=yes timer
